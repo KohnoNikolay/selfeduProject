@@ -20,7 +20,7 @@ from women.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('women/', include('women.urls')),
-    path('cats/', categories),  # http://127.0.0.1:8000/cats/
-
+    path('', include('women.urls')),
 ]
+
+handler404 = pageNotFound
